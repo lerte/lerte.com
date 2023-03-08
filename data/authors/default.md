@@ -1,16 +1,13 @@
 ---
-name: Tails Azimuth
-avatar: /static/images/avatar.png
-occupation: Professor of Atmospheric Science
-company: Stanford University
-email: address@yoursite.com
-twitter: https://twitter.com/Twitter
-linkedin: https://www.linkedin.com
-github: https://github.com
+name: Lerte Smith
+avatar: /static/images/avatar.jpg
+occupation: Fullstack engineer
+email: lerte@qq.com
+github: https://github.com/lerte
 ---
 
-Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
+💻10+年程序员, 全栈工程师, 前端开发工程师
 
-He leads the clean energy group which develops 3D air pollution-climate models, writes differential equation solvers, and manufactures titanium plated air ballons. In his free time he bakes raspberry pi.
+🎉 擅长 Web 开发, 小程序开发, Python, 桌面 Electron 开发
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+🚀Vue.js, Nuxt.js, Vuetify, React, Three.js, Tailwind CSS
