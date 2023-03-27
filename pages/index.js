@@ -2,7 +2,6 @@ import Head from 'next/head'
 import clientPromise from '@/lib/mongodb'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import ThemeSwitcher from '@/components/ThemeSwitcher'
 
 export default function Home({ isConnected }) {
   return (
@@ -26,7 +25,6 @@ export default function Home({ isConnected }) {
             for instructions.
           </h2>
         )}
-        <ThemeSwitcher />
       </main>
       <Footer />
     </>
