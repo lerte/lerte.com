@@ -235,12 +235,12 @@ export async function getServerSideProps(context) {
     // db.find({}) or any of the MongoDB Node Driver commands
 
     return {
-      props: { isConnected: true },
+      props: { isConnected: true }
     }
   } catch (e) {
     console.error(e)
     return {
-      props: { isConnected: false },
+      props: { isConnected: false }
     }
   }
 }
