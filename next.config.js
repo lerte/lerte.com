@@ -18,6 +18,10 @@ const nextConfig = {
         destination: 'https://www.google.com/search'
       },
       {
+        source: '/logos/:slug',
+        destination: 'https://www.google.com/logos/:slug'
+      },
+      {
         source: '/images/:slug',
         destination: 'https://www.google.com/images/:slug'
       }

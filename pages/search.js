@@ -3,7 +3,18 @@ function createMarkup(html) {
 }
 
 export default function Search({ html }) {
-  return <main dangerouslySetInnerHTML={createMarkup(html)}></main>
+  return (
+    <>
+      <main dangerouslySetInnerHTML={createMarkup(html)}></main>
+      <style>
+        {`
+          input{
+            border-width: 2px;
+          }
+        `}
+      </style>
+    </>
+  )
 }
 
 // This gets called on every request
