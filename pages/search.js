@@ -11,7 +11,7 @@ export async function getServerSideProps({ req }) {
   const { query } = req
   const params = new URLSearchParams(query)
   // Fetch data from external API
-  const res = await fetch(`https://www.google.com/search?${query}`)
+  const res = await fetch(`https://www.google.com/search?${params}`)
   const html = await res.text()
 
   // Pass data to the page via props
