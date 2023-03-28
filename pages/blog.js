@@ -1,8 +1,9 @@
+import Layout from '@/components/Layout'
 import clientPromise from '@/lib/mongodb'
 
 export default function Movies({ movies }) {
   return (
-    <div>
+    <Layout>
       <h1>Top 20 Movies of All Time</h1>
       <p>
         <small>(According to Metacritic)</small>
@@ -16,7 +17,7 @@ export default function Movies({ movies }) {
           </li>
         ))}
       </ul>
-    </div>
+    </Layout>
   )
 }
 

@@ -14,6 +14,7 @@ export default function Header() {
                   ['文章', '/blog'],
                   ['作品', '/work'],
                   ['吉他谱', '/guitar'],
+                  ['ChatGPT', '/chatgpt'],
                   ['Playground', '/playground']
                 ].map(([title, url], index) => (
                   <Link

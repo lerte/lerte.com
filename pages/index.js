@@ -1,33 +1,22 @@
-import Head from 'next/head'
+import Layout from '@/components/Layout'
 import clientPromise from '@/lib/mongodb'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 
 export default function Home({ isConnected }) {
   return (
-    <>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
-      <Header />
-      <main>
-        <h1 className="text-3xl font-bold underline">
-          Welcome to <a href="https://nextjs.org">Next.js with MongoDB!</a>
-        </h1>
+    <Layout>
+      <h1 className="text-3xl font-bold underline">
+        Welcome to <a href="https://nextjs.org">Next.js with MongoDB!</a>
+      </h1>
 
-        {isConnected ? (
-          <h2 className="subtitle">You are connected to MongoDB</h2>
-        ) : (
-          <h2 className="subtitle">
-            You are NOT connected to MongoDB. Check the <code>README.md</code>{' '}
-            for instructions.
-          </h2>
-        )}
-      </main>
-      <Footer />
-    </>
+      {isConnected ? (
+        <h2 className="subtitle">You are connected to MongoDB</h2>
+      ) : (
+        <h2 className="subtitle">
+          You are NOT connected to MongoDB. Check the <code>README.md</code> for
+          instructions.
+        </h2>
+      )}
+    </Layout>
   )
 }
 

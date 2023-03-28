@@ -104,7 +104,7 @@ const Form = () => {
       <select
         value={currentModel}
         onChange={handleModelChange}
-        className="fixed top-5 left-5 w-72 rounded-md border-none bg-white p-4 text-gray-500 outline-none dark:hover:bg-gray-900 dark:hover:text-gray-400"
+        className="fixed top-14 left-5 w-72 rounded-md border-none bg-white p-4 text-gray-500 outline-none dark:hover:bg-gray-900 dark:hover:text-gray-400"
       >
         {models.map((model) => (
           <option key={model.id} value={model.id}>
@@ -116,7 +116,7 @@ const Form = () => {
       <button
         onClick={handleReset}
         type="reset"
-        className="fixed top-5 right-5 rounded-md bg-white p-4 text-gray-500 disabled:hover:bg-transparent dark:hover:bg-gray-900 dark:hover:text-gray-400 dark:disabled:hover:bg-transparent"
+        className="fixed top-14 right-5 rounded-md bg-white p-4 text-gray-500 disabled:hover:bg-transparent dark:hover:bg-gray-900 dark:hover:text-gray-400 dark:disabled:hover:bg-transparent"
       >
         Clear History
       </button>
@@ -130,7 +130,7 @@ const Form = () => {
                     index % 2 === 0 ? 'bg-blue-500' : 'bg-gray-500'
                   } rounded-lg p-3`}
                 >
-                  <p>{item}</p>
+                  <p className="text-white">{item}</p>
                 </div>
               )
             })
@@ -143,7 +143,7 @@ const Form = () => {
                     index % 2 === 0 ? 'bg-blue-500' : 'bg-gray-500'
                   } rounded-lg p-3`}
                 >
-                  <p>{item}</p>
+                  <p className="text-white">{item}</p>
                 </div>
               )
             })
