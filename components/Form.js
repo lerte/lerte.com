@@ -1,6 +1,6 @@
 'use client'
-import { useRef, useState } from 'react'
 import useSWR from 'swr'
+import { useRef, useState } from 'react'
 
 const Form = () => {
   const messageInput = useRef()
@@ -84,7 +84,7 @@ const Form = () => {
   })
 
   const fetcher = async () => {
-    const models = await (await fetch('/api/models')).json()
+    const models = await fetch('/api/models').then((res) => res.json())
     setModels(models.data)
     const modelIndex = models.data.findIndex(
       (model) => model.id === 'gpt-3.5-turbo'

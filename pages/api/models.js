@@ -1,12 +1,11 @@
-import { Configuration, OpenAIApi } from 'openai'
-
-const configuration = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY
-})
-
-const openai = new OpenAIApi(configuration)
-
-export default async function (request) {
-  const response = await openai.listModels()
-  return new Response(JSON.stringify(response.data))
+export default async (req, res) => {
+  const response = await fetch('https://api.openai.com/v1/models', {
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${process.env.OPENAI_API_KEY ?? ''}`
+    },
+    method: 'GET'
+  })
+  const models = await response.json()
+  res.json(models)
 }
