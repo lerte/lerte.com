@@ -7,7 +7,7 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: '/google/:path*',
+        source: '/:path*',
         has: [
           {
             type: 'query',
