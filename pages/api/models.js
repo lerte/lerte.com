@@ -6,4 +6,7 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration)
 
-export default openai
+export async function GET(request) {
+  const response = await openai.listModels()
+  return new Response(JSON.stringify(response.data))
+}
