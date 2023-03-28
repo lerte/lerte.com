@@ -6,11 +6,13 @@ export default function Search({ html }) {
   return (
     <>
       <main dangerouslySetInnerHTML={createMarkup(html)}></main>
-      <style jsx>{`
-        input {
-          border-width: 2px;
-        }
-      `}</style>
+      <style>
+        {`
+          input{
+            border-width: 2px;
+          }
+        `}
+      </style>
     </>
   )
 }
