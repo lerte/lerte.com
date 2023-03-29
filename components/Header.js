@@ -3,12 +3,12 @@ import ThemeSwitcher from '@/components/ThemeSwitcher'
 
 export default function Header() {
   return (
-    <div className="supports-backdrop-blur:bg-white/95 sticky top-0 z-40 w-full flex-none bg-white backdrop-blur transition-colors duration-500 dark:border-slate-50/[0.06] dark:bg-slate-900/75 lg:z-50 lg:border-b lg:border-slate-900/10">
+    <div className="supports-backdrop-blur:bg-white/95 sticky top-0 z-40 w-full flex-none bg-white backdrop-blur transition-colors duration-500 dark:border-neutral-50/[0.06] dark:bg-neutral-900/75 lg:z-50 lg:border-b lg:border-neutral-900/10">
       <div className="max-w-8xl mx-auto">
-        <header className="mx-4 border-b border-slate-900/10 py-4 dark:border-slate-300/10 lg:mx-0 lg:border-0 lg:px-8">
+        <header className="mx-4 border-b border-neutral-900/10 py-4 dark:border-neutral-300/10 lg:mx-0 lg:border-0 lg:px-8">
           <div className="relative flex items-center">
             <div className="relative ml-auto hidden items-center lg:flex">
-              <nav className="flex space-x-4 text-sm font-semibold leading-6 text-slate-700 dark:text-slate-200 sm:justify-center">
+              <nav className="flex space-x-4 text-sm font-semibold leading-6 text-neutral-700 dark:text-neutral-200 sm:justify-center">
                 {[
                   ['首页', '/'],
                   ['文章', '/blog'],
@@ -20,18 +20,18 @@ export default function Header() {
                   <Link
                     key={index}
                     href={url}
-                    className="hover:text-sky-500 dark:hover:text-sky-400"
+                    className="hover:text-red-700 dark:hover:text-red-600"
                   >
                     {title}
                   </Link>
                 ))}
               </nav>
-              <div className="ml-6 flex items-center border-l border-slate-200 pl-6 dark:border-slate-800">
+              <div className="ml-6 flex items-center border-l border-neutral-200 pl-6 dark:border-neutral-800">
                 <ThemeSwitcher />
                 <a
                   target="_blank"
                   href="https://github.com/lerte/lerte.com"
-                  className="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300"
+                  className="ml-6 block text-neutral-400 hover:text-neutral-500 dark:hover:text-neutral-300"
                 >
                   <span className="sr-only">Source on GitHub</span>
                   <svg
