@@ -8,14 +8,17 @@
     "start": "next start"
   },
   "dependencies": {
+    "@webcontainer/api": "^1.1.0",
     "eventsource-parser": "^1.0.0",
+    "lodash": "^4.17.21",
     "mongodb": "^4.14.0",
     "next": "latest",
     "next-themes": "^0.2.1",
     "qiniu": "^7.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "swr": "^2.1.1"
+    "swr": "^2.1.1",
+    "xterm": "^5.1.0"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",

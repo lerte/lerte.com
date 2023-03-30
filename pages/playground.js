@@ -1,5 +1,10 @@
 import Layout from '@/components/Layout'
+import Editor from '@/components/Editor'
 
-export default function Playground() {
-  return <Layout>todo</Layout>
+export default function Home() {
+  return (
+    <Layout>
+      <Editor />
+    </Layout>
+  )
 }
