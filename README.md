@@ -2,8 +2,6 @@
 
 [MongoDB](https://www.mongodb.com/) is a general purpose, document-based, distributed database built for modern application developers and for the cloud era. This example will show you how to connect to and use MongoDB as your backend for your Next.js app.
 
-Tutorial Link: [How to Integrate MongoDB Into Your Next.js App](https://www.mongodb.com/developer/languages/javascript/nextjs-with-mongodb/)
-
 If you want to learn more about MongoDB, visit the following pages:
 
 - [MongoDB Atlas](https://mongodb.com/atlas)
@@ -20,44 +18,15 @@ Once you have access to the environment variables you'll need, deploy the exampl
 Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
 
 ```bash
-npx create-next-app --example with-mongodb mflix
+npx create-next-app --example with-mongodb with-mongodb-app
 ```
 
 ```bash
-yarn create next-app --example with-mongodb mflix
+yarn create next-app --example with-mongodb with-mongodb-app
 ```
 
 ```bash
-pnpm create next-app --example with-mongodb mflix
-```
-
-While running the above command in `node version > 18` will throw an error as following:
-
-```
-? Could not download "with-mongodb" because of a connectivity issue between your machine and GitHub.
-✔ Could not download "with-mongodb" because of a connectivity issue between your machine and GitHub.
-Do you want to use the default template instead? (Y/n)
-```
-
-The issue is in the node-tar `extract()` which emits the close event. There is a
-[GitHub issue open](https://github.com/vercel/next.js/issues/39321) to address this, but the current workaround is described below:
-
-You can either use `node version < 18` or type `Y` to get the default template downloaded:
-
-```
-Do you want to use the default template instead? (Y/n) Y
-```
-
-After that navigate to the project directory by running
-
-```
-cd mflix
-```
-
-And then install all the npm dependencies by running:
-
-```
-npm install
+pnpm create next-app --example with-mongodb with-mongodb-app
 ```
 
 ## Configuration
@@ -71,7 +40,7 @@ Set up a MongoDB database either locally or with [MongoDB Atlas for free](https:
 Copy the `env.local.example` file in this directory to `.env.local` (which will be ignored by Git):
 
 ```bash
-cp .env.local.example .env.local
+cp .env.example .env.local
 ```
 
 Set each variable on `.env.local`:
