@@ -21,7 +21,11 @@ export default function Search({ html }) {
 export async function getServerSideProps() {
   // Fetch data from external API
   const res = await fetch('https://www.google.com')
-  const html = await res.text()
+  const text = await res.text()
+  const html = text.replace(
+    'src="/images',
+    'src="/api/proxy?url=https://www.google.com/images'
+  )
 
   // Pass data to the page via props
   return { props: { html } }
