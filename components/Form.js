@@ -38,9 +38,6 @@ const Form = () => {
         currentModel
       })
     })
-    console.log('Edge function returned.')
-
-    console.log(response)
 
     if (!response.ok) {
       throw new Error(response.statusText)
@@ -158,12 +155,12 @@ const Form = () => {
           placeholder="Type your query"
           ref={messageInput}
           onKeyDown={handleEnter}
-          className="w-full translate-y-1 resize-none bg-transparent pt-4 pl-4 outline-none"
+          className="w-full translate-y-1 resize-none bg-transparent pt-4 pl-4 text-white outline-none"
         />
         <button
           disabled={isLoading}
           type="submit"
-          className="absolute top-[1.4rem] right-5 rounded-md p-1 text-gray-500 disabled:hover:bg-transparent dark:hover:bg-gray-900 dark:hover:text-gray-400 dark:disabled:hover:bg-transparent"
+          className="absolute top-[1.4rem] right-5 rounded-md p-1 text-white disabled:hover:bg-transparent dark:hover:bg-gray-900 dark:hover:text-gray-400 dark:disabled:hover:bg-transparent"
         >
           <svg
             stroke="currentColor"
