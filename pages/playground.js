@@ -1,4 +1,4 @@
-import Layout from '@/components/Layout'
+import Layout from '@/layouts/default'
 import Editor from '@/components/Editor'
 
 export default function Home() {

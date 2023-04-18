@@ -1,4 +1,4 @@
-import Layout from '@/components/Layout'
+import Layout from '@/layouts/default'
 import clientPromise from '@/lib/mongodb'
 
 export default function Movies({ movies }) {
