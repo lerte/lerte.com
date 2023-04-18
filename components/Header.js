@@ -4,7 +4,7 @@ import ThemeSwitcher from '@/components/ThemeSwitcher'
 export default function Header() {
   return (
     <div className="supports-backdrop-blur:bg-white/95 sticky top-0 z-40 w-full flex-none bg-white backdrop-blur transition-colors duration-500 dark:border-neutral-50/[0.06] dark:bg-neutral-900/75 lg:z-50 lg:border-b lg:border-neutral-900/10">
-      <div className="max-w-8xl mx-auto">
+      <div className="mx-auto max-w-7xl">
         <header className="mx-4 border-b border-neutral-900/10 py-4 dark:border-neutral-300/10 lg:mx-0 lg:border-0 lg:px-8">
           <div className="relative flex items-center">
             <div className="relative ml-auto hidden items-center lg:flex">

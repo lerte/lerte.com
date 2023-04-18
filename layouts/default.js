@@ -11,7 +11,7 @@ export default function Layout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Header />
-      <main>{children}</main>
+      <main className="mx-auto max-w-7xl">{children}</main>
       <Footer />
     </>
   )
