@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Image from 'next/image'
 import { useState } from 'react'
 import { useFormik } from 'formik'
 import Layout from '@/layouts/layout'
@@ -57,11 +56,11 @@ export default function Login() {
 
       <section className="mx-auto flex w-3/4 flex-col gap-10">
         <div className="title">
-          <h1 className="py-4 text-4xl font-bold text-gray-800">Explore</h1>
-          <p className="mx-auto w-3/4 text-gray-400">
+          <h1 className="py-4 text-4xl font-bold text-gray-800">Login</h1>
+          {/* <p className="mx-auto w-3/4 text-gray-400">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
             officia?
-          </p>
+          </p> */}
         </div>
 
         {/* form */}
@@ -115,13 +114,13 @@ export default function Login() {
               Login
             </button>
           </div>
-          <div className="input-button">
+          {/* <div className="input-button">
             <button
               type="button"
               onClick={handleGoogleSignin}
               className={styles.button_custom}
             >
-              Sign In with Google{' '}
+              Sign In with Google
               <Image src={'/assets/google.svg'} width="20" height={20}></Image>
             </button>
           </div>
@@ -131,10 +130,10 @@ export default function Login() {
               onClick={handleGithubSignin}
               className={styles.button_custom}
             >
-              Sign In with Github{' '}
+              Sign In with Github
               <Image src={'/assets/github.svg'} width={25} height={25}></Image>
             </button>
-          </div>
+          </div> */}
         </form>
 
         {/* bottom */}

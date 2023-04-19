@@ -45,10 +45,10 @@ export default function Register() {
       <section className="mx-auto flex w-3/4 flex-col gap-10">
         <div className="title">
           <h1 className="py-4 text-4xl font-bold text-gray-800">Register</h1>
-          <p className="mx-auto w-3/4 text-gray-400">
+          {/* <p className="mx-auto w-3/4 text-gray-400">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
             officia?
-          </p>
+          </p> */}
         </div>
 
         {/* form */}

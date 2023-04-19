@@ -1,9 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Image from 'next/image'
-import { useState } from 'react'
 import Layout from '@/layouts/default'
-import styles from '@/styles/Home.module.css'
 import { getSession, useSession, signOut } from 'next-auth/react'
 
 export default function Home() {
@@ -13,15 +10,7 @@ export default function Home() {
     signOut()
   }
 
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Home Page</title>
-      </Head>
-
-      {session ? User({ session, handleSignOut }) : Guest()}
-    </div>
-  )
+  return <Layout>{session ? User({ session, handleSignOut }) : Guest()}</Layout>
 }
 
 // Guest
@@ -56,7 +45,7 @@ function User({ session, handleSignOut }) {
       <div className="flex justify-center">
         <button
           onClick={handleSignOut}
-          className="mt-5 rounded-sm bg-indigo-500 bg-gray-50 px-10 py-1"
+          className="mt-5 rounded-sm bg-indigo-500 px-10 py-1 text-gray-50"
         >
           Sign Out
         </button>

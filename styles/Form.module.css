@@ -4,13 +4,13 @@
 }
 
 .input_text {
-  @apply w-full rounded-xl border bg-slate-50 py-4 px-6;
+  @apply w-full rounded-l-lg border bg-slate-50 py-4 px-6;
   @apply border-none focus:outline-none;
 }
 
 .button {
-  @apply w-full rounded-md bg-gradient-to-r from-blue-500 to-indigo-500;
-  @apply py-3 text-lg text-gray-50;
+  @apply w-full rounded-md border-blue-500 bg-gradient-to-r from-blue-500 to-indigo-500;
+  @apply border py-3 text-lg text-gray-50;
 }
 
 .button:hover {
