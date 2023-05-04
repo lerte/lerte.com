@@ -6,6 +6,7 @@ import Layout from '@/layouts/layout'
 import { useRouter } from 'next/router'
 import { signIn } from 'next-auth/react'
 import login_validate from '@/lib/validate'
+import Button from '@/components/ui/Button'
 import styles from '@/styles/Form.module.css'
 import { HiAtSymbol, HiFingerPrint } from 'react-icons/hi'
 
@@ -109,11 +110,10 @@ export default function Login() {
 
           {/* {formik.errors.password && formik.touched.password ? <span className='text-rose-500'>{formik.errors.password}</span> : <></>} */}
           {/* login buttons */}
-          <div className="input-button">
-            <button type="submit" className={styles.button}>
-              Login
-            </button>
-          </div>
+
+          <Button color="primary" type="submit" className="w-full">
+            Login
+          </Button>
           {/* <div className="input-button">
             <button
               type="button"
