@@ -117,7 +117,7 @@ const Form = () => {
       >
         Clear History
       </button>
-      <div className="mx-2 flex w-full flex-col items-start gap-3 pt-6 last:mb-6 md:mx-auto md:max-w-3xl">
+      <div className="mx-2 flex w-full flex-col items-start gap-3 pt-6 pb-28 last:mb-6 md:mx-auto md:max-w-3xl">
         {isLoading
           ? response.map((item, index) => {
               return (
@@ -140,7 +140,7 @@ const Form = () => {
                     index % 2 === 0 ? 'bg-blue-500' : 'bg-gray-500'
                   } rounded-lg p-3`}
                 >
-                  <pre className="text-white">{item}</pre>
+                  <pre className="whitespace-pre-wrap text-white">{item}</pre>
                 </div>
               )
             })
