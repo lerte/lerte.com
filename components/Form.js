@@ -140,7 +140,7 @@ const Form = () => {
                     index % 2 === 0 ? 'bg-blue-500' : 'bg-gray-500'
                   } rounded-lg p-3`}
                 >
-                  <p className="text-white">{item}</p>
+                  <pre className="text-white">{item}</pre>
                 </div>
               )
             })
