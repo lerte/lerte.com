@@ -27,7 +27,7 @@ export async function getServerSideProps() {
       'src="/images',
       'src="/api/proxy?url=https://www.google.com/images'
     )
-    .replace('src="/logos', 'src="/api/proxy?url=https://www.google.com/images')
+    .replace('src="/logos', 'src="/api/proxy?url=https://www.google.com/logos')
 
   // Pass data to the page via props
   return { props: { html } }
