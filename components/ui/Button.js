@@ -52,6 +52,7 @@ function Button(props) {
     onClick,
     children,
     disabled,
+    loading,
     variant,
     block,
     color,
@@ -61,7 +62,8 @@ function Button(props) {
   } = props
 
   const handleOnClick = (event) => {
-    onClick && onClick()
+    if (disabled || loading) return
+    onClick && onClick(event)
   }
 
   const classNames = clsx(className, { 'w-full': block })
@@ -80,7 +82,6 @@ function Button(props) {
           className: classNames
         })}
       >
-        <span></span>
         <span
           className={`pointer-events-none absolute bottom-0 left-0 right-0 top-0 ${
             variant == 'elevated' ? 'bg-current opacity-[.12]' : ''

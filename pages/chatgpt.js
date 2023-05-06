@@ -13,3 +13,5 @@ export default function ChatGPT() {
     </Layout>
   )
 }
+
+export { getServerSideProps } from '@/pages/index'
