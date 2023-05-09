@@ -8,7 +8,6 @@ import { signIn } from 'next-auth/react'
 import login_validate from '@/lib/validate'
 import Input from '@/components/ui/Input'
 import Button from '@/components/ui/Button'
-import styles from '@/styles/Form.module.css'
 import { HiAtSymbol, HiFingerPrint } from 'react-icons/hi'
 
 export default function Login() {
