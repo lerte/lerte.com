@@ -1,14 +1,15 @@
+'use client'
 import { useId } from 'react'
 import { ChevronDown } from 'lucide-react'
 
 export default function Menu() {
   const id = useId()
-  const handleClick = (e) => {
+  const handleClick = (e: React.MouseEvent) => {
     if (e.target !== e.currentTarget) {
       return
     }
     Array.from(document.getElementsByName('menu')).map(
-      (item) => (item.checked = false)
+      (item: HTMLInputElement) => (item.checked = false)
     )
   }
   return (

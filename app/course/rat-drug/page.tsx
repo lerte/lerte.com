@@ -7,9 +7,9 @@ export default function RatDrug() {
     (item + 1).toString(2).padStart(length, '0')
   )
 
-  const Rat = ({ number }) => {
-    // number是瓶子2进制编码的字符串 '11110'
-    const arrs = number.split('')
+  const Rat = (props: { binaryOrder: string }) => {
+    // binaryOrder是瓶子2进制编码的字符串 '11110'
+    const arrs = props.binaryOrder.split('')
     const rats = [] // 用来标记老鼠
     for (let i = 0; i < arrs.length; i++) {
       if (arrs[i] === '1') {
@@ -37,7 +37,7 @@ export default function RatDrug() {
               <span>{parseInt(bottle, 2)}</span>
             </div>
             <span>{bottle}</span>
-            <Rat number={bottle} />
+            <Rat binaryOrder={bottle} />
           </div>
         ))}
       </div>

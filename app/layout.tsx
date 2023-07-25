@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   authors: {
     name: '关注抖音@lerte'
   },
+  referrer: 'no-referrer',
   description:
     '10+年程序员，全栈工程师，前端开发工程师，擅长Web开发，小程序开发，Python，Electron开发，Vue,Nuxt,Vuetify,React,Next,js Three.js,Tailwind CSS',
   icons: {

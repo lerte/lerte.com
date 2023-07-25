@@ -1,5 +1,6 @@
+'use client'
 export default function Ripple() {
-  const rippleEffect = (event, element) => {
+  const rippleEffect = (event: MouseEvent, element: HTMLElement) => {
     // const element = ref.current
     const circle = document.createElement('span')
     const diameter = Math.max(element.clientWidth, element.clientHeight)

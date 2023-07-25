@@ -1,7 +1,9 @@
+'use client'
+
 export default function Debounce() {
-  const debounce = (fn, wait) => {
-    let timer = null
-    return function (...args) {
+  const debounce: Function = (fn: Function, wait: number) => {
+    let timer: NodeJS.Timeout | null = null
+    return function (...args: unknown[]) {
       timer && clearTimeout(timer)
       timer = setTimeout(() => {
         fn.apply(this, args)
@@ -9,7 +11,7 @@ export default function Debounce() {
     }
   }
 
-  const changeHandle = async (e) => {
+  const changeHandle = async (e: Event) => {
     const { value } = e.target
     const response = await fetch(
       `https://www.npmjs.com/search/suggestions?q=${value}`

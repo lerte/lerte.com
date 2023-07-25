@@ -1,7 +1,7 @@
 export default function Throttle() {
-  const throttle = (fn, wait) => {
-    let timer = null
-    return function (...args) {
+  const throttle = (fn: () => void, wait: number) => {
+    let timer: NodeJS.Timeout | null = null
+    return function (...args: unknown[]) {
       if (!timer) {
         timer = setTimeout(() => {
           timer = null
@@ -11,7 +11,9 @@ export default function Throttle() {
     }
   }
 
-  const changeColor = (e) => {
+  const changeColor = (
+    e: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement, MouseEvent>
+  ) => {
     e.target.style.backgroundColor =
       '#' + Math.random().toString(16).slice(2, 8)
   }

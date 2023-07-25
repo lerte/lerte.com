@@ -1,23 +1,26 @@
+'use client'
 import { useEffect } from 'react'
 
 export default function Album() {
   const images = [
-    'images/1.jpg',
-    'images/2.jpg',
-    'images/3.jpg',
-    'images/4.jpg',
-    'images/5.jpg',
-    'images/6.jpg',
-    'images/7.jpg',
-    'images/8.jpg',
-    'images/9.jpg',
-    'images/11.jpg',
-    'images/12.jpg'
+    'https://picsum.photos/540/600?1',
+    'https://picsum.photos/540/600?2',
+    'https://picsum.photos/540/600?3',
+    'https://picsum.photos/540/600?4',
+    'https://picsum.photos/540/600?5',
+    'https://picsum.photos/540/600?6',
+    'https://picsum.photos/540/600?7',
+    'https://picsum.photos/540/600?8',
+    'https://picsum.photos/540/600?9',
+    'https://picsum.photos/540/600?10',
+    'https://picsum.photos/540/600?11',
+    'https://picsum.photos/540/600?12'
   ]
   const deg = 360 / images.length
-  let rotateX = -15
+  const rotateX = -15
   let rotateY = 0
   let playing = true
+
   useEffect(() => {
     const imagesEl = document.getElementsByTagName('img')
     for (let i = 0; i < images.length; i++) {
@@ -29,9 +32,10 @@ export default function Album() {
   }, [])
 
   const play = () => {
+    const wrap: HTMLElement | null = document.querySelector('#wrap')
     if (playing) {
       rotateY++
-      wrap.style.transform =
+      wrap!.style.transform =
         'rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg)'
     }
     requestAnimationFrame(play)
@@ -45,7 +49,9 @@ export default function Album() {
         style={{ transformStyle: 'preserve-3d', transform: 'rotateX(-12deg)' }}
       >
         {images.map((image, index) => (
+          // eslint-disable-next-line @next/next/no-img-element
           <img
+            alt=""
             key={index}
             src={image}
             onMouseOut={() => (playing = true)}

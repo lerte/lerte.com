@@ -9,6 +9,7 @@ export default function Touch() {
             </p>
             <div className="grid w-full h-48 overflow-auto touch-auto rounded-lg shadow-lg">
               <img
+                alt=""
                 className="col-span-1 col-start-1 col-end-1 w-[150%] max-w-none"
                 src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=600&amp;h=400&amp;q=80"
               />
@@ -20,6 +21,7 @@ export default function Touch() {
             </p>
             <div className="w-full h-48 overflow-auto touch-none rounded-lg shadow-lg">
               <img
+                alt=""
                 className="w-[150%] max-w-none"
                 src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=600&amp;h=400&amp;q=80"
               />
@@ -31,6 +33,7 @@ export default function Touch() {
             </p>
             <div className="w-full h-48 overflow-auto touch-pan-x rounded-lg shadow-lg">
               <img
+                alt=""
                 className="w-[150%] max-w-none"
                 src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=600&amp;h=400&amp;q=80"
               />
@@ -42,6 +45,7 @@ export default function Touch() {
             </p>
             <div className="w-full h-48 overflow-auto touch-pan-y rounded-lg shadow-lg">
               <img
+                alt=""
                 className="w-[150%] max-w-none"
                 src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=600&amp;h=400&amp;q=80"
               />

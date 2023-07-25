@@ -1,3 +1,4 @@
+'use client'
 import { useEffect, useRef } from 'react'
 
 export default function Album() {
@@ -5,29 +6,29 @@ export default function Album() {
   const PADDING_X = 10
   const ITEM_WIDTH = 250
   const ITEM_HEIGHT = 300
-  const el = useRef(null)
+  const el = useRef<HTMLElement>(null)
   const selectedIndex = useRef(-1)
 
   const images = [
-    'images/1.jpg',
-    'images/2.jpg',
-    'images/3.jpg',
-    'images/4.jpg',
-    'images/5.jpg',
-    'images/6.jpg',
-    'images/7.jpg',
-    'images/8.jpg',
-    'images/9.jpg',
-    'images/10.jpg',
-    'images/11.jpg',
-    'images/12.jpg'
+    'https://picsum.photos/540/600?1',
+    'https://picsum.photos/540/600?2',
+    'https://picsum.photos/540/600?3',
+    'https://picsum.photos/540/600?4',
+    'https://picsum.photos/540/600?5',
+    'https://picsum.photos/540/600?6',
+    'https://picsum.photos/540/600?7',
+    'https://picsum.photos/540/600?8',
+    'https://picsum.photos/540/600?9',
+    'https://picsum.photos/540/600?10',
+    'https://picsum.photos/540/600?11',
+    'https://picsum.photos/540/600?12',
   ]
 
   // Apply select effect on item
-  const doSelect = (targetIndex) => {
+  const doSelect = (targetIndex: number) => {
     const children = el.current?.children
     if (selectedIndex.current !== -1) {
-      const currentEl = children[selectedIndex.current]
+      const currentEl = children?.[selectedIndex.current]
       currentEl.style.transform = 'scale(1)'
       currentEl.style.zIndex = '0'
     }
@@ -53,7 +54,7 @@ export default function Album() {
   const renderedList = images.map((it, index) => (
     <div
       key={index}
-      onClick={(e) => doSelect(index)}
+      onClick={() => doSelect(index)}
       className="absolute sahdotransition-all duration-700 top-48 ease-out origin-center rounded-lg bg-no-repeat bg-contain bg-center my-2 cursor-pointer"
       style={{
         width: ITEM_WIDTH,

@@ -1,5 +1,5 @@
 export default function Criminals() {
-  const criminals = [...new Array(100).keys()]
+  const criminals: number[] = [...new Array(100).keys()]
   return (
     <div className="container mx-auto p-4">
       <div className="flex flex-wrap">
