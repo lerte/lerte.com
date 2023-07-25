@@ -1,13 +1,12 @@
-import Image from "next/image";
+import ThemeSwitch from '@/components/ThemeSwitch'
 
 export default function Home() {
   return (
-    <main className="grid min-h-screen place-content-center bg-slate-900">
+    <main className="grid min-h-screen place-content-center relative">
+      <ThemeSwitch />
       <div className="mx-auto text-white">
-        <Image
-          alt="lerte"
-          width={360}
-          height={360}
+        <img
+          alt="devicon"
           src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/tailwindcss/tailwindcss-plain.svg"
         />
       </div>
@@ -15,5 +14,5 @@ export default function Home() {
         关注抖音 @lerte
       </h1>
     </main>
-  );
+  )
 }
