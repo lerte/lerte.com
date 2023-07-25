@@ -305,7 +305,7 @@ export default function Grid(){
     <div className="container mx-auto p-4">
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
         {items.map((item, index) => (
-          <a href={item.link} className="group flex items-center gap-4 rounded-md p-4 bg-slate-100 hover:bg-slate-300">
+          <a key={index} href={item.link} className="group flex items-center gap-4 rounded-md p-4 bg-slate-100 hover:bg-slate-300">
             <img src={item.icon} className="w-10 h-10 rounded-lg" />
             <div className="overflow-hidden">
               <p className="overflow-hidden text-ellipsis whitespace-nowrap font-semibold">{item.name}</p>
