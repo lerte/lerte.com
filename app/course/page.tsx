@@ -1,9 +1,11 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import ThemeSwitch from '@/components/ThemeSwitch'
 
 export default function Page() {
   return (
-    <main className="grid min-h-screen place-content-center bg-slate-900">
+    <main className="relative grid min-h-screen place-content-center">
+      <ThemeSwitch />
       <Link href="/course/masonry" className="grid gap-4">
         <div className="mx-auto text-white">
           <Image
