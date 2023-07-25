@@ -1,4 +1,4 @@
-export default () => {
+export default function Throttle() {
   const throttle = (fn, wait) => {
     let timer = null
     return function (...args) {

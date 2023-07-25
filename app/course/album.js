@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 
-export default () => {
+export default function Album() {
   // 生成随机颜色
   const PADDING_X = 10
   const ITEM_WIDTH = 250

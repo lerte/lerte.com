@@ -1,6 +1,6 @@
 import { useId } from 'react'
 
-export default () => {
+export default function UserId() {
   const id = useId()
 
   return (

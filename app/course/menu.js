@@ -1,6 +1,6 @@
 import { ChevronDown } from 'lucide-react'
 
-export default () => {
+export default function Menu() {
   return (
     <div className="bg-slate-900 min-h-screen text-4xl text-white grid place-content-center">
       <div className="group relative cursor-pointer">

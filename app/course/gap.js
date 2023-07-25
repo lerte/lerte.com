@@ -1,4 +1,4 @@
-export default () => {
+export default function Gap() {
   return (
     <div className="h-screen bg-slate-900 text-6xl text-white">
       <h1 className="text-center py-8">flex gap</h1>

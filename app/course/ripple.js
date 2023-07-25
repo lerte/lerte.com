@@ -1,4 +1,4 @@
-export default () => {
+export default function Ripple() {
   const rippleEffect = (event, element) => {
     // const element = ref.current
     const circle = document.createElement('span')

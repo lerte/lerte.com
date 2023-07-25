@@ -1,4 +1,4 @@
-export default () => {
+export default function Grid(){
   const items = [
     {
       link: 'https://yige.baidu.com/creation',

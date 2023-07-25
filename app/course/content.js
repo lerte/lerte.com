@@ -1,4 +1,4 @@
-export default () => {
+export default function Content() {
   return (
     <div className="h-screen grid place-content-center bg-slate-900">
       <div

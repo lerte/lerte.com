@@ -1,4 +1,4 @@
-export default () => {
+export default function Touch() {
   return (
     <div className="min-h-screen bg-slate-900 grid place-content-center text-lg text-white font-bold">
       <div className="relative rounded-xl overflow-auto p-8">

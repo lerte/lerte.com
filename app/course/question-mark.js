@@ -1,4 +1,4 @@
-export default () => {
+export default function QuestionMark() {
   const response = {
     setting: {
       showAds: false

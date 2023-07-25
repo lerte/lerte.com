@@ -1,4 +1,4 @@
-export default () => {
+export default function Criminals() {
   const criminals = [...new Array(100).keys()]
   return (
     <div className="container mx-auto p-4">

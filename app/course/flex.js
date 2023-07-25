@@ -1,4 +1,4 @@
-export default () => {
+export default function Flex() {
   const leftImg = 'https://i0.hdslb.com/bfs/banner/d944eca06e3d6a391ea91a163cfab2669e6124c4.png@976w_550h_1c_!web-home-carousel-cover.avif'
   const rightItem = [
     {

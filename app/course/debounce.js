@@ -1,4 +1,4 @@
-export default () => {
+export default function Debounce() {
   const debounce = (fn, wait) => {
     let timer = null
     return function (...args) {

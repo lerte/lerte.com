@@ -1,7 +1,7 @@
 import { Milk, RatIcon } from 'lucide-react'
 const MAX_BOTTLES = 30
 
-export default () => {
+export default function RatDrug() {
   const { length } = MAX_BOTTLES.toString(2)
   const bottles = [...new Array(MAX_BOTTLES).keys()].map((item) =>
     (item + 1).toString(2).padStart(length, '0')

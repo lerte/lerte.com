@@ -1,7 +1,7 @@
 import { useId } from 'react'
 import { ChevronDown } from 'lucide-react'
 
-export default () => {
+export default function Menu() {
   const id = useId()
   const handleClick = (e) => {
     if (e.target !== e.currentTarget) {

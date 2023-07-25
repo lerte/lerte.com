@@ -1,4 +1,4 @@
-export default () => {
+export default function Tricks() {
   return (
     <div className="h-screen grid place-content-center bg-slate-900 text-6xl text-white">
       <ul className="list-decimal [&>li]:bg-yellow-500 [&>:not([hidden])~:not([hidden])]:mt-4">

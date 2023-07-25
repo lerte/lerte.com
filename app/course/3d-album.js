@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-export default () => {
+export default function Album() {
   const images = [
     'images/1.jpg',
     'images/2.jpg',

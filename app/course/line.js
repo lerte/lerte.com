@@ -1,4 +1,4 @@
-export default () => {
+export default function Line() {
   return (
     <div className="bg-slate-900 h-screen text-4xl text-white">
       <div className="max-w-xs flex flex-col gap-2">
