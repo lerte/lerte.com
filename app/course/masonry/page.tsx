@@ -7131,7 +7131,7 @@ export default function Masonry() {
   ]
 
   return (
-    <main className="bg-stone-900 flex items-center justify-center min-h-screen">
+    <main className="flex items-center justify-center min-h-screen">
       <div className="container">
         <div className="columns-1 space-y-2 sm:columns-2 sm:space-y-4 md:columns-3 lg:columns-4 xl:columns-5 2xl:columns-6">
           {images.map((image) => (

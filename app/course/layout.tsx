@@ -1,6 +1,11 @@
 'use client'
-import { ThemeProvider } from 'next-themes'
+import ThemeSwitch from '@/components/ThemeSwitch'
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return <ThemeProvider>{children}</ThemeProvider>
+  return (
+    <main>
+      <ThemeSwitch />
+      {children}
+    </main>
+  )
 }

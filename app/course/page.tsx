@@ -1,12 +1,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import ThemeSwitch from '@/components/ThemeSwitch'
 
 export default function Page() {
   return (
-    <main className="relative grid min-h-screen place-content-center">
-      <ThemeSwitch />
-      <Link href="/course/masonry" className="grid gap-4">
+    <article className="grid min-h-screen place-content-center">
+      <Link href="/course/hover-follow" className="grid gap-4">
         <div className="mx-auto text-white">
           <Image
             alt="lerte"
@@ -16,9 +14,9 @@ export default function Page() {
           />
         </div>
         <h1 className="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-7xl font-black text-transparent">
-          Click菜单
+          Hover跟随效果
         </h1>
       </Link>
-    </main>
+    </article>
   )
 }
