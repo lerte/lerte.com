@@ -18,7 +18,7 @@ const ThemeSwitch = () => {
   }
 
   return (
-    <div className="flex gap-2 absolute top-2 right-2 cursor-pointer">
+    <div className="flex gap-2 cursor-pointer">
       {theme === 'system' && <Laptop onClick={() => setTheme('system')} />}
       {theme === 'dark' && <Sun onClick={() => setTheme('light')} />}
       {theme === 'light' && <Moon onClick={() => setTheme('dark')} />}
