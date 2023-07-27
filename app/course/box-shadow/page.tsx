@@ -1,10 +1,9 @@
 'use client'
-
+import { useId } from 'react'
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
-import { useId } from 'react'
 
-const ThemeSwitch = () => {
+export default function Page() {
   const id = useId()
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
@@ -19,7 +18,7 @@ const ThemeSwitch = () => {
   }
 
   return (
-    <div className="flex gap-2 cursor-pointer">
+    <div className="flex flex-col items-center">
       <input
         id={id}
         type="checkbox"
@@ -27,8 +26,7 @@ const ThemeSwitch = () => {
         checked={theme === 'light'}
         onChange={(e) => setTheme(e.target.checked ? 'light' : 'dark')}
       />
+      <label htmlFor={id}>Toggle dark mode</label>
     </div>
   )
 }
-
-export default ThemeSwitch

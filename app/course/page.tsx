@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function Page() {
   return (
     <article className="grid min-h-screen place-content-center">
-      <Link href="/course/hover-follow" className="grid gap-4">
+      <Link href="/course/box-shadow" className="grid gap-4">
         <div className="mx-auto text-white">
           <Image
             alt="lerte"
@@ -14,7 +14,7 @@ export default function Page() {
           />
         </div>
         <h1 className="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-7xl font-black text-transparent">
-          Hover跟随效果
+          box-shadow动画
         </h1>
       </Link>
     </article>
