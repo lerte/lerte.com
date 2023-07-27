@@ -3,6 +3,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
+import remarkGfm from 'remark-gfm'
 
 const postsDirectory = path.join(process.cwd(), '_posts') // process.cwd() returns the absolute path of the current working directory
 
@@ -15,7 +16,11 @@ export function getSortedPostsData() {
     const matterResult = matter(fileContents)
     return {
       slug,
-      ...(matterResult.data as { date: string; title: string })
+      ...(matterResult.data as {
+        date: string
+        title: string
+        description: string
+      })
     }
   })
   return allPostsData.sort((a, b) => {
@@ -27,7 +32,7 @@ export function getSortedPostsData() {
   })
 }
 
-export function getAllPostIds() {
+export function getAllPostSlugs() {
   const fileNames = fs.readdirSync(postsDirectory)
 
   return fileNames.map((fileName) => {
@@ -45,6 +50,7 @@ export async function getPostData(slug: string) {
   const matterResult = matter(fileContents)
   const processedContent = await remark()
     .use(html)
+    .use(remarkGfm)
     .process(matterResult.content)
   const contentHtml = processedContent.toString()
   return {
