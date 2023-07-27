@@ -2,7 +2,7 @@
 
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
-import { Sun, Moon, Laptop } from 'lucide-react'
+import { Sun, Moon } from 'lucide-react'
 
 const ThemeSwitch = () => {
   const { theme, setTheme } = useTheme()
@@ -19,9 +19,8 @@ const ThemeSwitch = () => {
 
   return (
     <div className="flex gap-2 cursor-pointer">
-      {theme === 'system' && <Laptop onClick={() => setTheme('system')} />}
-      {theme === 'dark' && <Sun onClick={() => setTheme('light')} />}
-      {theme === 'light' && <Moon onClick={() => setTheme('dark')} />}
+      {theme === 'light' && <Sun onClick={() => setTheme('dark')} />}
+      {theme === 'dark' && <Moon onClick={() => setTheme('light')} />}
     </div>
   )
 }
