@@ -1,34 +1,42 @@
-import { getAllPosts, getPostBySlug } from '@/lib/post'
-import markdownToHtml from '@/lib/markdown'
+import Date from '@/components/Date'
 
-export default function Post({ content }) {
-  return <>{content}</>
+import { getPostData } from '@/lib/posts'
+
+type Params = {
+  slug: string
 }
 
-export async function getStaticProps({ params }) {
-  console.log(params)
-  const post = getPostBySlug(params.slug)
-  const content = await markdownToHtml(post.content || '')
+type Props = {
+  params: Params
+}
+
+type PostData = {
+  title: string
+  date: string
+  contentHtml: string
+}
+
+export async function generateMetadata({ params }: Props) {
+  const postData: PostData = await getPostData(params.slug)
 
   return {
-    props: {
-      ...post,
-      content
-    }
+    title: postData.title
   }
 }
 
-export async function getStaticPaths() {
-  const posts = getAllPosts()
+export default async function Post({ params }: Props) {
+  const postData: PostData = await getPostData(params.slug)
 
-  return {
-    paths: posts.map((post) => {
-      return {
-        params: {
-          slug: post.slug
-        }
-      }
-    }),
-    fallback: 'blocking'
-  }
+  return (
+    <>
+      <h1 className="font-extrabold text-3xl mb-1">{postData.title}</h1>
+      <div className="text-gray-500 font-medium mb-5">
+        <Date dateString={postData.date} />
+      </div>
+      <div
+        className="text-gray-600"
+        dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+      />
+    </>
+  )
 }
