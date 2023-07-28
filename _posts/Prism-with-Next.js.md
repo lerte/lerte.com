@@ -1,5 +1,5 @@
 ---
-date: '2023-07-27'
+date: '2023-07-26'
 title: 'Prism with Next.js'
 description: 'Example using Prism / Markdown with Next.js including switching syntax highlighting themes.'
 ---

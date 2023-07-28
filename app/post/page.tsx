@@ -21,7 +21,13 @@ export default async function Post() {
       <ul>
         {postData.map((post) => (
           <li key={post.slug}>
-            <Link href={`/post/${post.slug}`}>{post.title}</Link>
+            <Link
+              href={`/post/${post.slug}`}
+              className="p-2 rounded-md flex justify-between hover:bg-black/10 hover:dark:bg-white/10"
+            >
+              <span>{post.title}</span>
+              <time>{post.date}</time>
+            </Link>
           </li>
         ))}
       </ul>
