@@ -1,6 +1,6 @@
 import Date from '@/components/Date'
-
 import { getPostData } from '@/lib/posts'
+import Markdown from '@/components/Markdown'
 
 type Params = {
   slug: string
@@ -13,7 +13,7 @@ type Props = {
 type PostData = {
   title: string
   date: string
-  contentHtml: string
+  content: string
 }
 
 export async function generateMetadata({ params }: Props) {
@@ -33,10 +33,7 @@ export default async function Post({ params }: Props) {
       <div className="text-gray-500 font-medium mb-5">
         <Date dateString={postData.date} />
       </div>
-      <div
-        className="text-gray-600"
-        dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
-      />
+      <Markdown markdown={postData.content} />
     </article>
   )
 }
