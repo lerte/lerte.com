@@ -17,7 +17,7 @@ export async function generateMetadata() {
 export default async function Post() {
   const postData: PostData[] = await getSortedPostsData()
   return (
-    <div className="mt-4 mx-auto max-w-7xl">
+    <div className="mx-auto max-w-7xl">
       <ul>
         {postData.map((post) => (
           <li key={post.slug}>
