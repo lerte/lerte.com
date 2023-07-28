@@ -4,8 +4,8 @@ import Image from 'next/image'
 export default function Page() {
   return (
     <article className="grid min-h-screen place-content-center">
-      <Link href="/course/box-shadow" className="grid gap-4">
-        <div className="mx-auto text-white">
+      <Link href="/course/shadow-animation" className="grid gap-4">
+        <div className="mx-auto">
           <Image
             alt="lerte"
             width={360}

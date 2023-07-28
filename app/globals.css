@@ -3,23 +3,20 @@
 @tailwind utilities;
 
 .toggle {
-  --size: 24px;
-  appearance: none;
-  outline: none;
-  cursor: pointer;
+  --size: 240px;
   width: var(--size);
   height: var(--size);
-  box-shadow: inset calc(var(--size) * 0.33) calc(var(--size) * -0.25) 0;
+  appearance: none;
+  cursor: pointer;
   border-radius: 100%;
-  color: #e6e6ff;
   transition: all 500ms;
+  box-shadow: inset calc(var(--size) * 0.33) calc(var(--size) * -0.25) 0;
 }
 .toggle:checked {
+  color: #ffaa00;
   --ray-size: calc(var(--size) * -0.4);
   --offset-orthogonal: calc(var(--size) * 0.65);
   --offset-diagonal: calc(var(--size) * 0.45);
-  transform: scale(0.75);
-  color: #ffaa00;
   box-shadow:
     inset 0 0 0 var(--size),
     calc(var(--offset-orthogonal) * -1) 0 0 var(--ray-size),
