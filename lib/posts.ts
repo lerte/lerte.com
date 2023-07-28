@@ -1,9 +1,6 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import { remark } from 'remark'
-import html from 'remark-html'
-import remarkGfm from 'remark-gfm'
 
 const postsDirectory = path.join(process.cwd(), '_posts') // process.cwd() returns the absolute path of the current working directory
 
