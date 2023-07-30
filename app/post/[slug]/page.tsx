@@ -29,7 +29,7 @@ export default async function Post({ params }: Props) {
 
   return (
     <article className="prose mx-auto max-w-7xl dark:prose-invert">
-      <h1 className="font-extrabold text-3xl mb-1">{postData.title}</h1>
+      <h1>{postData.title}</h1>
       <div className="text-gray-500 font-medium mb-5">
         <Date dateString={postData.date} />
       </div>
