@@ -36,7 +36,7 @@ export default function Markdown({ markdown }: MarkdownProps) {
             <SyntaxHighlighter
               style={oneDark}
               language={match[1]}
-              className="text-lg"
+              className="text-xs md:text-sm lg:text-base xl:text-lg"
               codeTagProps={{ style: { ...jetbrains.style } }}
             >
               {String(children).replace(/\n$/, '')}
