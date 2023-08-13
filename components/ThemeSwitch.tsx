@@ -1,9 +1,9 @@
 'use client'
 
 import { useTheme } from 'next-themes'
-import { useEffect, useState } from 'react'
+import { CSSProperties, useEffect, useState } from 'react'
 
-const ThemeSwitch = () => {
+const ThemeSwitch = ({ size }: { size?: number }) => {
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
@@ -20,9 +20,14 @@ const ThemeSwitch = () => {
     <div className="flex gap-2 cursor-pointer">
       <input
         type="checkbox"
+        style={
+          {
+            '--size': size ? size + 'px' : '24px'
+          } as CSSProperties
+        }
         checked={theme === 'light'}
+        className="toggle"
         onChange={(e) => setTheme(e.target.checked ? 'light' : 'dark')}
-        className="appearance-none cursor-pointer w-6 h-6 rounded-full text-[#e6e6ff] shadow-[inset_8px_-6px_0] transition-shadow duration-500 checked:text-[#ffaa00] checked:scale-75 checked:shadow-[inset_0_0_0_24px,-15.6px_0_0_-9.6px,15.6px_0_0_-9.6px,0_-15.6px_0_-9.6px,0_15.6px_0_-9.6px,-10.8px_-10.8px_0_-9.6px,10.8px_10.8px_0_-9.6px,-10.8px_10.8px_0_-9.6px,10.8px_-10.8px_0_-9.6px]"
       />
     </div>
   )

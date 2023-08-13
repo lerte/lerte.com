@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 .toggle {
-  --size: 240px;
   width: var(--size);
   height: var(--size);
   appearance: none;
