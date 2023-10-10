@@ -18,6 +18,10 @@ const links = [
   {
     name: 'Interview',
     href: '/interview'
+  },
+  {
+    name: 'Links',
+    href: '/links'
   }
 ]
 
