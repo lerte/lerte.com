@@ -14,6 +14,6 @@ export default function Date({ dateString }: { dateString: string }) {
   } else if (diff < 7) {
     return <time dateTime={dateString}>{format(date, 'dddd')}</time>
   } else {
-    return <time dateTime={dateString}>{format(date, 'LLL d, yyyy')}</time>
+    return <time dateTime={dateString}>{format(date, 'YYYY-MM-DD')}</time>
   }
 }
