@@ -1,17 +1,19 @@
-// import Link from 'next/link'
-// import Image from 'next/image'
+import Link from 'next/link'
+import FlowingBorder from '@/components/FlowingBorder'
 
 export default function Page() {
   return (
-    <article className="grid min-h-screen place-content-center">
-      {/* <Link href="/course/chatgpt" className="grid gap-4">
+    <article className="grid bg-slate-900 min-h-screen place-content-center">
+      <Link href="/course/grid" className="grid gap-4">
         <div className="mx-auto">
-          <Image width={180} height={180} alt="" src="/chatgpt.png" />
+          <img
+            alt="tailwindcss"
+            className="object-fit w-full mx-auto"
+            src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/tailwindcss/tailwindcss-plain.svg"
+          />
         </div>
-        <h1 className="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-7xl font-black text-transparent">
-          Chatgpt输入框
-        </h1>
-      </Link> */}
+        <FlowingBorder>Tailwind CSS Grid网格布局</FlowingBorder>
+      </Link>
     </article>
   )
 }

@@ -28,3 +28,13 @@
     calc(var(--offset-diagonal) * -1) var(--offset-diagonal) 0 var(--ray-size),
     var(--offset-diagonal) calc(var(--offset-diagonal) * -1) 0 var(--ray-size);
 }
+
+@keyframes textclip {
+  0%,
+  100% {
+    background-position: 200% auto;
+  }
+  50% {
+    background-position: -200% center;
+  }
+}
