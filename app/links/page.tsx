@@ -1,6 +1,6 @@
 export default function Links() {
   return (
-    <ul>
+    <ul className="w-fit">
       <li>
         <a href="https://www.v6g.cn" target="_blank">
           <img
