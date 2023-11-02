@@ -1,23 +1,28 @@
+---
+date: '2023-11-02 14:50'
+title: 'Next.js NavLink'
+description: ''
+---
+
+```js
 'use client'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
-export default function NavLink({
+export default function NavLink = ({
   href,
   className,
-  children,
-  ...rest
+  children
 }: {
   href: string
   className?: string | ((props: { isActive: boolean }) => string | undefined)
   children: React.ReactNode
-}) {
+}) => {
   const pathname = usePathname()
   const isActive = pathname === href
 
   return (
     <Link
-      {...rest}
       href={href}
       className={
         typeof className == 'function' ? className({ isActive }) : className
@@ -27,3 +32,4 @@ export default function NavLink({
     </Link>
   )
 }
+```
