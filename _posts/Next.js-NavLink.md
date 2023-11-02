@@ -12,7 +12,8 @@ import { usePathname } from 'next/navigation'
 export default function NavLink = ({
   href,
   className,
-  children
+  children,
+  ...rest
 }: {
   href: string
   className?: string | ((props: { isActive: boolean }) => string | undefined)
@@ -23,6 +24,7 @@ export default function NavLink = ({
 
   return (
     <Link
+      {...rest}
       href={href}
       className={
         typeof className == 'function' ? className({ isActive }) : className
