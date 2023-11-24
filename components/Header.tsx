@@ -6,24 +6,20 @@ import ThemeSwitch from './ThemeSwitch'
 
 const links = [
   {
-    name: 'Home',
+    name: '首页',
     href: '/'
   },
   {
-    name: 'Post',
+    name: '文章',
     href: '/post'
   },
   {
-    name: 'Course',
-    href: '/course'
-  },
-  {
-    name: 'Interview',
-    href: '/interview'
-  },
-  {
-    name: 'Links',
+    name: '友链',
     href: '/links'
+  },
+  {
+    name: '关于',
+    href: '/about'
   }
 ]
 
