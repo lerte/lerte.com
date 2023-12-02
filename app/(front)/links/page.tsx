@@ -1,6 +1,12 @@
 import { Avatar } from 'actify'
 
-const links = [
+type TLink = {
+  name: string
+  link: string
+  avatar: string
+}[]
+
+const links: TLink = [
   {
     name: 'Josh Comeau',
     link: 'https://www.joshwcomeau.com/',
@@ -37,8 +43,45 @@ const links = [
     name: 'Anthony Fu',
     link: 'https://antfu.me/',
     avatar: 'https://antfu.me/favicon.svg'
+  },
+  {
+    name: 'Dimples',
+    link: 'https://www.dimples.top/',
+    avatar:
+      'https://dimples-yanjie.oss-cn-beijing.aliyuncs.com/blog/img/QQ%E5%9B%BE%E7%89%8720200613022516.jpg'
+  },
+  {
+    name: '归宿网',
+    link: 'https://www.guisu.xyz/',
+    avatar: 'https://avatars.githubusercontent.com/u/62182035?s=200&v=4'
+  },
+  {
+    name: 'cosarty',
+    link: 'http://cosarty.cn/',
+    avatar: 'http://cosarty.cn/cxn.png'
+  },
+  {
+    name: 'Xiaojun Zhou',
+    link: 'https://www.xiaojun.im/posts',
+    avatar: 'https://www.xiaojun.im/avatar.jpg'
+  },
+  {
+    name: 'ChenNan',
+    link: 'https://heycn.cn/',
+    avatar: 'https://heycn.cn/images/avatar.png'
+  },
+  {
+    name: 'nano71',
+    link: 'https://nano71.com/',
+    avatar: 'https://avatars.githubusercontent.com/u/80870408?s=96&v=4'
+  },
+  {
+    name: 'guangzan',
+    link: 'https://www.cnblogs.com/guangzan',
+    avatar: 'https://avatars.githubusercontent.com/u/43458667?s=96&v=4'
   }
 ]
+
 export default function Links() {
   return (
     <div className="max-w-7xl mx-auto">

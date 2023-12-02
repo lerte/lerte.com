@@ -479,10 +479,10 @@ acorn@^8.9.0:
   resolved "https://registry.npmmirror.com/acorn/-/acorn-8.10.0.tgz"
   integrity sha512-F0SAmZ8iUtS//m8DmCTA0jlh6TDKkHQyK6xc6V4KDTyZKA9dnvX9/3sRTVQrWm79glUAZbnmmNcdYwUIHWVybw==
 
-actify@^0.1.50:
-  version "0.1.50"
-  resolved "https://registry.npmjs.org/actify/-/actify-0.1.50.tgz#1920e5051cfba119c17054fa606591593d84e10f"
-  integrity sha512-32IPiBPD3BATxKnTCfiQ4qDzvbQL+El1dWl2RtnVbMwTOaSlc3d3qlKjvu5FgpqfjJD8zsYNXNciCstgBpnrvw==
+actify@^0.1.55:
+  version "0.1.55"
+  resolved "https://registry.npmjs.org/actify/-/actify-0.1.55.tgz#3bec1426fd678deeb703b6fe83df03a66c0eaaf1"
+  integrity sha512-Vy6LN9D8mFAh9rrujQLDl1NImnqktfbH/30nmwsoaUo7pP7t7Jrxk26sc7D7/wqe5sCFj+Y6jrCGtQnbTEPLEQ==
 
 ajv@^6.10.0, ajv@^6.12.4:
   version "6.12.6"
