@@ -79,6 +79,11 @@ const links: TLink = [
     name: 'guangzan',
     link: 'https://www.cnblogs.com/guangzan',
     avatar: 'https://avatars.githubusercontent.com/u/43458667?s=96&v=4'
+  },
+  {
+    name: 'dy-xiaodong2022',
+    link: 'https://fastjs.cc/',
+    avatar: 'https://avatars.githubusercontent.com/u/84657208?v=4'
   }
 ]
 

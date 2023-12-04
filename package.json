@@ -16,7 +16,7 @@
     "@typescript-eslint/eslint-plugin": "^6.2.0",
     "@typescript-eslint/parser": "^6.2.0",
     "@vercel/postgres": "^0.4.1",
-    "actify": "^0.1.55",
+    "actify": "^0.1.56",
     "autoprefixer": "10.4.14",
     "dayjs": "^1.11.9",
     "eslint": "^8.45.0",
