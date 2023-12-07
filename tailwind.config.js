@@ -5,7 +5,7 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './node_modules/actify/lib/**/*.{js,cjs}'
+    './node_modules/actify/dist/**/*.{js,jsx}',
   ],
   theme: {
     extend: {

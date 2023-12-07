@@ -1,6 +1,8 @@
-export default function Page() {
+import React from 'react'
+
+const Page: React.FC = () => {
   return (
-    <div className="py-10 h-full mx-auto max-w-6xl flex gap-2 items-center justify-between">
+    <div className="py-10 h-full mx-auto max-w-4xl flex flex-col md:flex-row gap-2 items-center justify-between">
       <div className="space-y-2">
         <img
           className="w-60"
@@ -16,3 +18,5 @@ export default function Page() {
     </div>
   )
 }
+
+export default Page
