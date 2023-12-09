@@ -12,5 +12,20 @@ export default function Home() {
 }
 
 function Main() {
-  return <main className="grow p-2 grid place-content-center"></main>
+  return (
+    <main className="flex flex-col max-w-7xl mx-auto px-4">
+      <h3 className="text-3xl font-semibold mb-4">
+        Open source React Components Library
+      </h3>
+      <a href="https://actifyjs.com" target="_blank">
+        <div className="rounded-lg shadow-md overflow-hidden">
+          <img
+            alt="actify"
+            src="/actify.jpg"
+            className="brightness-75 hover:brightness-100 transition-all"
+          />
+        </div>
+      </a>
+    </main>
+  )
 }
