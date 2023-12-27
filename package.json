@@ -26,7 +26,7 @@
     "postcss": "8.4.27",
     "prettier": "^3.0.0",
     "react": "^18.2.0",
-    "react-dom": "18.3.0-canary-c5b937576-20231219",
+    "react-dom": "^18.2.0",
     "react-markdown": "^8.0.7",
     "react-syntax-highlighter": "^15.5.0",
     "remark-gfm": "^3.0.1",
@@ -39,7 +39,7 @@
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
     "@types/react-syntax-highlighter": "^15.5.11",
-    "actify": "^0.1.69",
+    "actify": "^0.1.71",
     "geist": "^1.2.0",
     "tailwind-material-colors": "^1.2.0"
   }

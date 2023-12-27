@@ -1,7 +1,8 @@
+'use client'
 import { tv } from 'tailwind-variants'
 import NavLink from '@/components/NavLink'
 import { List, ListItem, ListGroup, Divider } from 'actify'
-import { Atom, LayoutDashboard, Layers, Settings } from 'lucide-react'
+import { LayoutDashboard, Layers, Settings } from 'lucide-react'
 
 const variants = tv({
   base: 'fixed top-0 h-screen bg-surface overflow-y-auto row-start-2 row-end-4 col-start-1 col-end-2 shadow'

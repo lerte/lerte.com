@@ -1,12 +1,10 @@
-'use client'
-import { Drawer, Button, Spacer, Popover, IconButton } from 'actify'
-
-import React from 'react'
 import Link from 'next/link'
-import signOut from '@/app/lib/signout'
 import Aside from '@/components/Aside'
+import { Settings } from 'lucide-react'
+import AppDrawer from '@/components/AppDrawer'
+import UserPopover from '@/components/UserPopover'
 import ThemeSwitch from '@/components/ThemeSwitch'
-import { Menu, User, Settings } from 'lucide-react'
+import { Button, Spacer, IconButton } from 'actify'
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -17,29 +15,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             Lerte
           </Button>
         </Link>
-        <Drawer placement="left" className="overflow-hidden">
-          <Drawer.Activator className="lg:hidden">
-            <IconButton color="primary">
-              <Menu />
-            </IconButton>
-          </Drawer.Activator>
-          <Drawer.Content className="w-[240px]">
-            <Aside className="w-full" />
-          </Drawer.Content>
-        </Drawer>
+        <AppDrawer />
         <Spacer />
-        <Popover>
-          <Popover.Activator>
-            <IconButton color="primary">
-              <User />
-            </IconButton>
-          </Popover.Activator>
-          <Popover.Content>
-            <form action={signOut}>
-              <Button>Sign Out</Button>
-            </form>
-          </Popover.Content>
-        </Popover>
+        <UserPopover />
         <IconButton color="primary">
           <Settings />
         </IconButton>
