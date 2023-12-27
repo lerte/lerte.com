@@ -1,7 +1,7 @@
-import Footer from '@/components/Footer'
 import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 
-export default function Home() {
+export default async function Home() {
   return (
     <div className="flex flex-col justify-between min-h-screen">
       <Header />
@@ -21,7 +21,7 @@ function Main() {
         <div className="rounded-lg shadow-md overflow-hidden">
           <img
             alt="actify"
-            src="/actify.jpg"
+            src="/images/actify.jpg"
             className="brightness-75 hover:brightness-100 transition-all"
           />
         </div>

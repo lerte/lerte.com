@@ -82,7 +82,7 @@ const links: TLink = [
   },
   {
     name: 'dy-xiaodong2022',
-    link: 'https://fastjs.cc/',
+    link: 'https://fastjs.dev',
     avatar: 'https://avatars.githubusercontent.com/u/84657208?v=4'
   }
 ]

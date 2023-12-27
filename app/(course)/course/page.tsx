@@ -49,13 +49,9 @@ export default function Page() {
     <article className="grid place-content-center">
       <Link href="/product" className="grid gap-4">
         <div className="mx-auto h-full p-2">
-          <Cover name="nextjs" />
+          <Cover name="tailwindcss" />
         </div>
-        <FlowingBorder>
-          你可能不需要使用
-          <br />
-          useState
-        </FlowingBorder>
+        <FlowingBorder>Tailwind CSS v3.4</FlowingBorder>
       </Link>
     </article>
   )
