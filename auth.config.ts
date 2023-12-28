@@ -15,9 +15,9 @@ export const authConfig = {
       if (isOnAdmin) {
         if (isLoggedIn) return true
         return false // Redirect unauthenticated users to login page
+      } else {
+        return true
       }
-      if (!isLoggedIn) return false // Redirect logged-in users to admin page
-      return true
     }
   }
 } satisfies NextAuthConfig

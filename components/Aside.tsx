@@ -20,13 +20,8 @@ export default function Aside({ className }: { className: string }) {
     },
     {
       icon: <Layers />,
-      title: 'User Interface',
-      children: [
-        { title: 'Form', to: '/admin/form' },
-        { title: 'Grid', to: '/admin/grid' },
-        { title: 'List', to: '/admin/list' },
-        { title: 'Table', to: '/admin/table' }
-      ]
+      title: '栏目',
+      children: [{ title: 'Posts', to: '/admin/posts' }]
     },
     {
       divider: true

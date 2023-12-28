@@ -1,6 +1,7 @@
 'use client'
+import { Menu } from 'lucide-react'
 import Aside from '@/components/Aside'
-import { Drawer, IconButton, Menu } from 'actify'
+import { Drawer, IconButton } from 'actify'
 
 export default function AppDrawer() {
   return (
