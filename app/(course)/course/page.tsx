@@ -47,11 +47,11 @@ const Cover = ({ name }: { name: string }) => {
 export default function Page() {
   return (
     <article className="grid place-content-center">
-      <Link href="/product" className="grid gap-4">
+      <Link href="/document" className="grid gap-4">
         <div className="mx-auto h-full p-2">
           <Cover name="tailwindcss" />
         </div>
-        <FlowingBorder>Tailwind CSS v3.4</FlowingBorder>
+        <FlowingBorder>Next.js中使用document</FlowingBorder>
       </Link>
     </article>
   )

@@ -16,7 +16,7 @@ export default function LoginPage() {
           <img
             alt="unsplash"
             className="rounded-l-lg h-full object-cover"
-            src="https://images.unsplash.com/photo-1682685797140-c17807f8f217?auto=format&fit=crop&q=80&w=1770&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="https://cdn.midjourney.com/43fef294-ed97-4db6-81f2-7644c0cab7d5/0_1.png"
           />
         </div>
         <div className="rounded-lg md:rounded-l-none md:rounded-r-lg p-10 bg-surface h-full flex flex-col gap-4 justify-center">
