@@ -1,12 +1,11 @@
 'use client'
 import { TextField } from 'actify'
 import { useState, useEffect, ChangeEvent } from 'react'
-import { useSearchParams, usePathname, useRouter } from 'next/navigation'
+import { useSearchParams, useRouter } from 'next/navigation'
 
 export default function Browser() {
-  const searchParams = useSearchParams()
-  const pathname = usePathname()
   const { replace } = useRouter()
+  const searchParams = useSearchParams()
   const [term, setTerm] = useState('')
 
   useEffect(() => {
@@ -24,7 +23,7 @@ export default function Browser() {
     if (e.key == 'Enter') {
       params.set('url', term!)
     }
-    replace(`${pathname}?${params.toString()}`)
+    replace(`/admin/proxy?${params.toString()}`)
   }
   return (
     <TextField
