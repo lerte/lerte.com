@@ -11,13 +11,17 @@ export const authConfig = {
   callbacks: {
     authorized({ auth, request: { nextUrl } }) {
       const isLoggedIn = !!auth?.user
-      const isOnAdmin = nextUrl.pathname.startsWith('/admin')
-      if (isOnAdmin) {
+      const isOnDashboard = nextUrl.pathname.startsWith('/admin')
+      if (isOnDashboard) {
         if (isLoggedIn) return true
         return false // Redirect unauthenticated users to login page
-      } else {
-        return true
+      } else if (isLoggedIn) {
+        const isOnLogin = nextUrl.pathname.startsWith('/login')
+        if (isOnLogin) {
+          return Response.redirect(new URL('/admin', nextUrl))
+        }
       }
+      return true
     }
   }
 } satisfies NextAuthConfig
