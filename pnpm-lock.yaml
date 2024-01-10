@@ -104,8 +104,8 @@ devDependencies:
     specifier: ^15.5.11
     version: 15.5.11
   actify:
-    specifier: ^0.1.71
-    version: 0.1.71(@types/react@18.2.16)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^0.1.77
+    version: 0.1.77(@types/react@18.2.16)(react-dom@18.2.0)(react@18.2.0)
   geist:
     specifier: ^1.2.0
     version: 1.2.0(next@14.0.4)
@@ -719,8 +719,8 @@ packages:
     hasBin: true
     dev: false
 
-  /actify@0.1.71(@types/react@18.2.16)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-+iXVxeQ6rRwLZP5lvVZTf7+xzG1bHLI0mBBoV3IJUpMCBkYKrFPlSUBTStaTsp95t1VB+HP5F3aQLx/bVccqXw==}
+  /actify@0.1.77(@types/react@18.2.16)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-euqfChnCkbXAaL0ZXZzZF8JHtJCFhqBHCCK5Bn0Qc+0KHWJ+8pzgdR3SS2BFEHSzTEPD+/DvNea6TTgu6jG7bw==}
     peerDependencies:
       react: '>=18.2.0'
       react-dom: '>=18.2.0'

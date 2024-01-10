@@ -2,7 +2,7 @@
 import { tv } from 'tailwind-variants'
 import NavLink from '@/components/NavLink'
 import { List, ListItem, ListGroup, Divider } from 'actify'
-import { LayoutDashboard, Layers, Settings } from 'lucide-react'
+import { LayoutDashboard, Layers, Chrome, Settings } from 'lucide-react'
 
 const variants = tv({
   base: 'fixed top-0 h-screen bg-surface overflow-y-auto row-start-2 row-end-4 col-start-1 col-end-2 shadow'
@@ -22,6 +22,14 @@ export default function Aside({ className }: { className: string }) {
       icon: <Layers />,
       title: '栏目',
       children: [{ title: 'Posts', to: '/admin/posts' }]
+    },
+    {
+      divider: true
+    },
+    {
+      icon: <Chrome />,
+      title: '科学访问',
+      to: '/admin/proxy'
     },
     {
       divider: true

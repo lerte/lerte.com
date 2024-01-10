@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Aside from '@/components/Aside'
 import { Settings } from 'lucide-react'
+import Browser from '@/components/Browser'
 import AppDrawer from '@/components/AppDrawer'
 import UserPopover from '@/components/UserPopover'
 import ThemeSwitch from '@/components/ThemeSwitch'
@@ -17,6 +18,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </Link>
         <AppDrawer />
         <Spacer />
+        <Browser />
         <UserPopover />
         <IconButton color="primary">
           <Settings />
