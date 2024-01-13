@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import FlowingBorder from '@/components/FlowingBorder'
 
-const Cover = ({ name }: { name: string }) => {
+type Name = 'nextjs' | 'react' | 'python' | 'tailwindcss'
+const Cover = ({ name }: { name: Name }) => {
   if (name == 'nextjs') {
     return (
       <svg
@@ -47,11 +48,11 @@ const Cover = ({ name }: { name: string }) => {
 export default function Page() {
   return (
     <article className="grid place-content-center">
-      <Link href="/document" className="grid gap-4">
+      <Link href="/list" className="grid gap-4">
         <div className="mx-auto h-full p-2">
-          <Cover name="tailwindcss" />
+          <Cover name="nextjs" />
         </div>
-        <FlowingBorder>Next.js中使用document</FlowingBorder>
+        <FlowingBorder>Intercepting Routes</FlowingBorder>
       </Link>
     </article>
   )

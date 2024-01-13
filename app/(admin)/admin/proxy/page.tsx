@@ -1,5 +1,3 @@
-import { TextField } from 'actify'
-
 function createMarkup(html: string) {
   return { __html: html }
 }
