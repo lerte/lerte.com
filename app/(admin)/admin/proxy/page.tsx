@@ -7,7 +7,7 @@ export default async function Proxy({
 }: {
   searchParams: { [key: string]: string }
 }) {
-  let { url = 'www.google.com' } = searchParams
+  let { url = 'www.bing.com' } = searchParams
   if (!url?.startsWith('http')) {
     url = 'https://' + url
   }
