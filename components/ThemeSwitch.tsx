@@ -1,7 +1,8 @@
 'use client'
 
+import { CSSProperties, ChangeEvent, useEffect, useState } from 'react'
+
 import { useTheme } from 'next-themes'
-import { CSSProperties, useEffect, useState } from 'react'
 
 const ThemeSwitch = ({ size }: { size?: number }) => {
   const { theme, setTheme } = useTheme()
@@ -16,6 +17,11 @@ const ThemeSwitch = ({ size }: { size?: number }) => {
     return null
   }
 
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const _theme = event.target.checked ? 'light' : 'dark'
+    setTheme(_theme)
+  }
+
   return (
     <div className="flex gap-2 cursor-pointer">
       <input
@@ -25,9 +31,9 @@ const ThemeSwitch = ({ size }: { size?: number }) => {
             '--size': size ? size + 'px' : '24px'
           } as CSSProperties
         }
-        checked={theme === 'light'}
         className="toggle"
-        onChange={(e) => setTheme(e.target.checked ? 'light' : 'dark')}
+        checked={theme === 'light'}
+        onChange={handleChange}
       />
     </div>
   )

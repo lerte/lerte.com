@@ -43,8 +43,7 @@
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
     "@types/react-syntax-highlighter": "^15.5.11",
-    "actify": "^0.1.77",
-    "geist": "^1.2.0",
-    "tailwind-material-colors": "^1.2.0"
+    "actify": "^0.2.8",
+    "geist": "^1.2.0"
   }
 }
