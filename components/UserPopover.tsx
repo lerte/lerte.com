@@ -1,21 +1,28 @@
 'use client'
+
+import { Button, Menu, MenuItem } from 'actify'
+
+import React from 'react'
 import { User } from 'lucide-react'
 import signOut from '@/app/lib/signout'
-import { Button, IconButton, Popover } from 'actify'
 
 export default function UserPopover() {
+  const [open, setOpen] = React.useState(false)
   return (
-    <Popover>
-      <Popover.Activator>
-        <IconButton color="primary">
-          <User />
-        </IconButton>
-      </Popover.Activator>
-      <Popover.Content>
-        <form action={signOut}>
-          <Button>Sign Out</Button>
-        </form>
-      </Popover.Content>
-    </Popover>
+    <div className="relative w-fit">
+      <Button
+        id="usage-anchor"
+        onClick={() => {
+          setOpen(!open)
+        }}
+      >
+        <User />
+      </Button>
+      <Menu open={open} setOpen={setOpen}>
+        <MenuItem>
+          <form action={signOut}>Sign Out</form>
+        </MenuItem>
+      </Menu>
+    </div>
   )
 }

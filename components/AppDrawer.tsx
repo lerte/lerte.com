@@ -1,19 +1,21 @@
 'use client'
-import { Menu } from 'lucide-react'
+
+import { IconButton, NavigationDrawer } from 'actify'
+
 import Aside from '@/components/Aside'
-import { Drawer, IconButton } from 'actify'
+import { Menu } from 'lucide-react'
 
 export default function AppDrawer() {
   return (
-    <Drawer placement="left" className="overflow-hidden">
-      <Drawer.Activator className="lg:hidden">
+    <NavigationDrawer placement="left" className="overflow-hidden">
+      <NavigationDrawer.Activator className="lg:hidden">
         <IconButton color="primary">
           <Menu />
         </IconButton>
-      </Drawer.Activator>
-      <Drawer.Content className="w-[240px]">
+      </NavigationDrawer.Activator>
+      <NavigationDrawer.Content className="w-[240px]">
         <Aside className="w-full" />
-      </Drawer.Content>
-    </Drawer>
+      </NavigationDrawer.Content>
+    </NavigationDrawer>
   )
 }
