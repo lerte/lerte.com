@@ -372,12 +372,11 @@ export default function Page() {
             <div className="mb-5 flex flex-col gap-2 sm:flex-row items-start justify-between">
               <ul>
                 <li>budwoo.com</li>
-                <li>www.yqjjt.com</li>
                 <li>oomi.lerte.com</li>
+                <li>www.actifyjs.com</li>
+                <li>www.taildoor.com</li>
                 <li>www.ngroker.com</li>
                 <li>www.linkgull.com</li>
-                <li>www.actifyjs.com</li>
-                <li>zaowuyun.com/umaadmin/</li>
               </ul>
               <ul>
                 <li>客户端 Excalidraw (Tauri + React)</li>
@@ -386,7 +385,7 @@ export default function Page() {
                 <li>客户端 Zroker (Wails + React + Radix-UI)</li>
                 <li>组件库 Actify (React 19 Material Design 3)</li>
                 <li>客户端 HugoCreator (Electron + Vue2 + Vuetify)</li>
-                <li>Chrome浏览器插件 TailSmart (React + HeadlessUI)</li>
+                <li>Chrome浏览器插件 Taildoor (React + HeadlessUI)</li>
               </ul>
             </div>
           </div>
