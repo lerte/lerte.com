@@ -41,14 +41,28 @@ function Main() {
           </a>
         </div>
         <div className="relative group border rounded-lg shadow-md overflow-hidden">
+          <h2 className="p-2 text-lg w-full bg-red-500 absolute z-10 transition -translate-y-full group-hover:translate-y-0">
+            Offline - 离线检测器
+          </h2>
+          <a target="_blank" href="https://github.com/lerte/offline">
+            <img
+              alt="offline"
+              src="/images/offline.png"
+              className="brightness-75 hover:brightness-100 transition-all"
+            />
+          </a>
+        </div>
+        <div className="relative group border rounded-lg shadow-md overflow-hidden">
           <h2 className="p-2 text-lg w-full bg-indigo-800 absolute z-10 transition -translate-y-full group-hover:translate-y-0">
             Excalidraw gui client.
           </h2>
-          <img
-            alt="excalidraw"
-            src="/images/excalidraw.png"
-            className="brightness-75 hover:brightness-100 transition-all"
-          />
+          <a target="_blank" href="https://github.com/lerte/excalidraw">
+            <img
+              alt="excalidraw"
+              src="/images/excalidraw.png"
+              className="brightness-75 hover:brightness-100 transition-all"
+            />
+          </a>
         </div>
         <div className="relative group border rounded-lg shadow-md overflow-hidden">
           <h2 className="p-2 text-lg w-full bg-red-800 absolute z-10 transition -translate-y-full group-hover:translate-y-0">
@@ -58,6 +72,18 @@ function Main() {
             <img
               alt="taildoor"
               src="/images/taildoor.png"
+              className="brightness-75 hover:brightness-100 transition-all"
+            />
+          </a>
+        </div>
+        <div className="relative group border rounded-lg shadow-md overflow-hidden">
+          <h2 className="p-2 text-lg w-full bg-[#2e8555] absolute z-10 transition -translate-y-full group-hover:translate-y-0">
+            Taildoor - the essential tool for Tailwind CSS
+          </h2>
+          <a target="_blank" href="https://www.zroker.com">
+            <img
+              alt="zroker"
+              src="/images/zroker.png"
               className="brightness-75 hover:brightness-100 transition-all"
             />
           </a>
