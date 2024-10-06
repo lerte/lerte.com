@@ -78,7 +78,7 @@ function Main() {
         </div>
         <div className="relative group border rounded-lg shadow-md overflow-hidden">
           <h2 className="p-2 text-lg w-full bg-[#2e8555] absolute z-10 transition -translate-y-full group-hover:translate-y-0">
-            Taildoor - the essential tool for Tailwind CSS
+            Zroker - the gui client for zrok
           </h2>
           <a target="_blank" href="https://www.zroker.com">
             <img
