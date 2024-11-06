@@ -8,9 +8,9 @@ type TLink = {
 
 const links: TLink = [
   {
-    name: 'Josh Comeau',
+    name: 'Josh W. Comeau',
     link: 'https://www.joshwcomeau.com/',
-    avatar: 'https://www.joshwcomeau.com/assets/favicon.png?v=4'
+    avatar: 'https://www.joshwcomeau.com/favicon.png'
   },
   {
     name: '微6g',
@@ -31,7 +31,7 @@ const links: TLink = [
   {
     name: 'Innei',
     link: 'https://innei.in/',
-    avatar: 'https://innei.ren/api/v2/objects/avatar/d5obusvl8ihmamw5qu.png'
+    avatar: 'https://avatars.githubusercontent.com/u/41265413?v=4'
   },
   {
     name: 'Choi Yang',
@@ -51,19 +51,9 @@ const links: TLink = [
       'https://dimples-yanjie.oss-cn-beijing.aliyuncs.com/blog/img/QQ%E5%9B%BE%E7%89%8720200613022516.jpg'
   },
   {
-    name: '归宿网',
-    link: 'https://www.guisu.xyz/',
-    avatar: 'https://avatars.githubusercontent.com/u/62182035?s=200&v=4'
-  },
-  {
-    name: 'cosarty',
-    link: 'http://cosarty.cn/',
-    avatar: 'http://cosarty.cn/cxn.png'
-  },
-  {
     name: 'Xiaojun Zhou',
     link: 'https://www.xiaojun.im/posts',
-    avatar: 'https://www.xiaojun.im/avatar.jpg'
+    avatar: 'https://avatars.githubusercontent.com/u/24448924?v=4'
   },
   {
     name: 'ChenNan',
@@ -84,6 +74,11 @@ const links: TLink = [
     name: 'dy-xiaodong2022',
     link: 'https://fastjs.dev',
     avatar: 'https://avatars.githubusercontent.com/u/84657208?v=4'
+  },
+  {
+    name: 'joisun',
+    link: 'https://sunzy.fun/',
+    avatar: 'https://avatars.githubusercontent.com/u/44388103?v=4'
   }
 ]
 
