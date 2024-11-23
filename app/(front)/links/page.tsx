@@ -79,7 +79,12 @@ const links: TLink = [
     name: 'joisun',
     link: 'https://sunzy.fun/',
     avatar: 'https://avatars.githubusercontent.com/u/44388103?v=4'
-  }
+  },
+  {
+    name: 'ZLX Studio',
+    link: 'https://blog.iooioio.com/',
+    avatar: 'https://blog.iooioio.com/upload/favicon.png'
+  },
 ]
 
 export default function Links() {
