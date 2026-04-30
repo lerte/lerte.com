@@ -136,7 +136,7 @@ export default function Page() {
                   </div>
                   <div className="font-medium">
                     <div className="text-sm text-gray-900 dark:text-slate-100">
-                      37
+                      {new Date().getFullYear() - 1987}
                     </div>
                     <div className="text-xs text-gray-400 dark:text-slate-400">
                       年龄
