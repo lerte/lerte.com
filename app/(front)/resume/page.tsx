@@ -8,10 +8,11 @@ export default function Page() {
           <div className="rounded-xl p-7 bg-slate-200 dark:bg-slate-800">
             <div className="flex items-start justify-between">
               <div className="flex items-start gap-3">
+                {/** biome-ignore lint/performance/noImgElement: <ignore> */}
                 <img
-                  src="https://media.licdn.com/dms/image/C5103AQH_eE5f59GiTg/profile-displayphoto-shrink_100_100/0/1560160860390?e=1727308800&v=beta&t=5TnYfY-Q8NiJS7mPw0e8zRuxmCbhyPOfFawgk_-F8hk"
                   alt="Avatar"
-                  className="h-14 w-14 cursor-pointer rounded-xl border-2 border-white shadow-sm dark:border-slate-800"
+                  src="/images/avatar.jpg"
+                  className="size-14 cursor-pointer rounded-xl border-2 border-white shadow-sm dark:border-slate-800"
                 />
                 <div>
                   <div className="text-lg font-bold text-gray-900 dark:text-slate-50">
